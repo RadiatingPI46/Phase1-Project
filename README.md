@@ -12,7 +12,7 @@
 * And you are all done
 
 ## Live server
-* You can view the web live on [Sheduling](https://radiatingpi46.github.io/Phase1-Project/)
+* You can view the web live on (https://radiatingpi46.github.io/Phase1-Project/)
 
 ## Known Bugs
 The application has the following issues:
