@@ -1,0 +1,33 @@
+{
+  "Members": [
+    {
+      "id": "1",
+      "Member_email": "nzeluelijah@gmail.com",
+      "Member_userName": "Toxic",
+      "Member_password": "onepunchman"
+    }
+  ],
+  "Schedules": [
+    {
+      "id": "30e5",
+      "Task": "Project finishing",
+      "Task_description": "Finish the coding project by the end f the day",
+      "Schedule_creation_date": "Thu Oct 17 2024 22:04:44 GMT+0300 (East Africa Time)",
+      "Schedule_due_date": "2024-10-30"
+    },
+    {
+      "id": "7c3b",
+      "Task": "Running",
+      "Task_description": "Run the cancer support initiative marathon.",
+      "Schedule_creation_date": "Thu Oct 17 2024 22:06:56 GMT+0300 (East Africa Time)",
+      "Schedule_due_date": "2024-10-26"
+    },
+    {
+      "id": "1b1b",
+      "Task": "Creative building",
+      "Task_description": "Create a new project using python.",
+      "Schedule_creation_date": "Thu Oct 17 2024 22:09:49 GMT+0300 (East Africa Time)",
+      "Schedule_due_date": "2024-10-31"
+    }
+  ]
+}
