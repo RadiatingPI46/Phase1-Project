@@ -7,7 +7,7 @@ const reg_sub=document.getElementById("Reg_sub")
 reg_sub.addEventListener("submit", (e)=>{
   e.preventDefault()
 
-    fetch('https://phase1-project-w1y5.onrender.com/Members', {
+    fetch('https://phase1-project-1-mhtr.onrender.com/Members', {
         method: 'POST',
         body: JSON.stringify({
           "Member_email":email_m.value,
@@ -32,7 +32,7 @@ login_sub.addEventListener("submit", (e)=>{
   const password_l=document.getElementById("login_password").value
   const user_name_l=document.getElementById("login_user_name").value
   
-  fetch('https://phase1-project-w1y5.onrender.com/Members')
+  fetch('https://phase1-project-1-mhtr.onrender.com/Members')
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
@@ -82,7 +82,7 @@ login_sub.addEventListener("submit", (e)=>{
     document.getElementById("Add_schedule").addEventListener("submit", (a)=>{
       a.preventDefault();
     
-        fetch("https://phase1-project-w1y5.onrender.com/Schedules", {
+        fetch("https://phase1-project-1-mhtr.onrender.com/Schedules", {
             method: 'POST',
             body: JSON.stringify({
               "Task":document.getElementById("schedule_task").value,
@@ -101,7 +101,7 @@ login_sub.addEventListener("submit", (e)=>{
     })
 
 
-    fetch("https://phase1-project-w1y5.onrender.com/Schedules")
+    fetch("https://phase1-project-1-mhtr.onrender.com/Schedules")
   .then((response) => response.json())
   .then((data) =>{
     for(schedule of data){
@@ -122,7 +122,7 @@ login_sub.addEventListener("submit", (e)=>{
 
   //Function for deleting the schedules using the button
   delete_schedule=(id)=>{
-      fetch(`https://phase1-project-w1y5.onrender.com/Schedules/${id}`, {
+      fetch(`https://phase1-project-1-mhtr.onrender.com/Schedules/${id}`, {
           method: 'DELETE',
         })
         .then((response) => response.json())
@@ -133,7 +133,7 @@ login_sub.addEventListener("submit", (e)=>{
   // function for displaying the data of a single schedule
   fetch_data=(id)=>{
   
-    fetch(`https://phase1-project-w1y5.onrender.com/Schedules/${id}`,{
+    fetch(`https://phase1-project-1-mhtr.onrender.com/Schedules/${id}`,{
       method: 'GET',
     })
     .then((response) => response.json())
@@ -150,7 +150,7 @@ login_sub.addEventListener("submit", (e)=>{
   }
 
   edit_data=(id)=>{
-    fetch(`https://phase1-project-w1y5.onrender.com/Schedules/${id}`)
+    fetch(`https://phase1-project-1-mhtr.onrender.com/Schedules/${id}`)
   .then((response) => response.json())
   .then((data) => {
     document.getElementById("schedule_edit").innerHTML=`
@@ -172,7 +172,7 @@ login_sub.addEventListener("submit", (e)=>{
     `
     document.getElementById("edit_schedule").addEventListener("submit",(e)=>{
 
-      fetch(`https://phase1-project-w1y5.onrender.com/Schedules/${id}`, {
+      fetch(`https://phase1-project-1-mhtr.onrender.com/Schedules/${id}`, {
         method: 'PATCH',
         body: JSON.stringify({
           "Task":document.getElementById("update_schedule_task").value,
