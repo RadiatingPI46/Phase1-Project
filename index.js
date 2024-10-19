@@ -107,10 +107,7 @@ login_sub.addEventListener("submit", (e)=>{
     for(schedule of data){
        document.getElementById("schedule_display").innerHTML+=`
        <div>
-          <div id="checklist">
-            <input checked="" value="1" name="r" type="checkbox" id="01">
-            <label for="01">${schedule.Task}</label>
-          </div>
+       <h2>${schedule.Task}</h2>
        <li><button onclick="fetch_data ('${schedule.id}')" class="p-2" style="width: 250px;">View</button></li>
        <li><button onclick="edit_data ('${schedule.id}')" class="p-2" style="width: 250px;">Edit</button></li>
        <li><button onclick ="delete_schedule ('${schedule.id}')" class="p-2" style="width: 250px;">X</button></li>
