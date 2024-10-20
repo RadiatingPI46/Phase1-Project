@@ -137,9 +137,9 @@ login_sub.addEventListener("submit", (e)=>{
     .then((data) =>{
       document.getElementById("schedule_overview").innerHTML+=`
       <div>
-       <li>${schedule.Task}</li>
        <li>Made on ${data.Schedule_creation_date} due on ${data.Schedule_due_date}<li>
        <p>${data.Task_description}</p>
+       <hr>
       </div>
       `
   
