@@ -14,6 +14,9 @@
 ## Live server
 * You can view the web live on (https://radiatingpi46.github.io/Phase1-Project/)
 
+## Document presentation
+You can view the form on https://docs.google.com/presentation/d/1XlMa76PcyFPiXa-R4CkFTHpT9NdO1qtFSi0lW23ctHU/edit?usp=sharing
+
 ## Known Bugs
 The application has the following issues:
     -It is not usable as a multi party aplication
